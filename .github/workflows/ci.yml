@@ -1,0 +1,26 @@
+name: Package metadata checks
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  metadata:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.3'
+          coverage: none
+      - name: Lint metadata scripts and parse the feed
+        run: |
+          php -l .github/scripts/update.php
+          php -l .github/tests/update.php
+          php -r 'if (simplexml_load_file(".github/joomengine_mcp_update_server.xml") === false) { exit(1); }'
+      - name: Check package publication metadata
+        run: php .github/tests/update.php
