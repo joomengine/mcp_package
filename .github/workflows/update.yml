@@ -1,0 +1,52 @@
+name: Update package feed with OctoShoom
+
+on:
+  push:
+    tags: ['v*']
+
+permissions:
+  contents: read
+
+concurrency:
+  group: package-update-feed
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: main
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Setup Git User
+        uses: octoleo/git-user@v2
+        with:
+          gpg-key: ${{ secrets.GPG_KEY }}
+          gpg-user: ${{ secrets.GPG_USER }}
+          ssh-key: ${{ secrets.SSH_KEY }}
+          ssh-pub: ${{ secrets.SSH_PUB }}
+          git-user: ${{ secrets.GIT_USER }}
+          git-email: ${{ secrets.GIT_EMAIL }}
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.3'
+          coverage: none
+      - name: Add the published package to its update feed
+        env:
+          TAG: ${{ github.ref_name }}
+        run: |
+          git show "refs/tags/$TAG:pkg_joomengine_mcp.xml" > "$RUNNER_TEMP/pkg_joomengine_mcp.xml"
+          php .github/scripts/update.php "$TAG" "$RUNNER_TEMP/pkg_joomengine_mcp.xml"
+          git add .github/joomengine_mcp_update_server.xml
+          if ! git diff --cached --quiet; then
+            git commit -m "Add $TAG to the package update server"
+            git remote set-url origin git@github.com:joomengine/mcp_package.git
+            git push origin HEAD:main
+          fi
+      - name: Hash the published package archive
+        uses: octoleo/octoshoom@master
+        with:
+          config-json: |
+            {"update_servers":[{"owner":"joomengine","repo":"mcp_package","branch":"main","path":".github/joomengine_mcp_update_server.xml"}]}
