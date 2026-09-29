@@ -1,66 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- The package tag workflow adds published versions; OctoShoom supplies their archive hashes. -->
 <updates>
-  <update>
-    <name>JoomEngine MCP Package</name>
-    <description>JoomEngine MCP component, webservices routing, and local console server.</description>
-    <element>pkg_joomengine_mcp</element>
-    <type>package</type>
-    <client>site</client>
-    <version>1.0.0</version>
-    <infourl title="JoomEngine MCP Package">https://github.com/joomengine/mcp_package/tree/v1.0.0</infourl>
-    <maintainer>Llewellyn van der Merwe</maintainer>
-    <maintainerurl>https://dev.vdm.io/</maintainerurl>
-    <php_minimum>8.3.0</php_minimum>
-    <changelogurl>https://raw.githubusercontent.com/joomengine/mcp_component/main/changelog.xml</changelogurl>
-    <downloads>
-      <downloadurl type="full" format="zip">https://github.com/joomengine/mcp_package/archive/refs/tags/v1.0.0.zip</downloadurl>
-    </downloads>
-    <tags>
-      <tag>stable</tag>
-    </tags>
-    <targetplatform name="joomla" version="6\.[1-9][0-9]*"/>
-    <sha512>658dfdd6a0ec9e5d093288dd2077934b704341ac8bbafb98c4699ccf8d6a9e8d450fc9ccf98b71739e6d244da93860b22266d5609192cefa5c2788f6d8a6ae5b</sha512>
-  </update>
-  <update>
-    <name>JoomEngine MCP Package</name>
-    <description>JoomEngine MCP component, webservices routing, and local console server.</description>
-    <element>pkg_joomengine_mcp</element>
-    <type>package</type>
-    <client>site</client>
-    <version>1.0.1</version>
-    <infourl title="JoomEngine MCP Package">https://github.com/joomengine/mcp_package/tree/v1.0.1</infourl>
-    <maintainer>Llewellyn van der Merwe</maintainer>
-    <maintainerurl>https://dev.vdm.io/</maintainerurl>
-    <php_minimum>8.3.0</php_minimum>
-    <changelogurl>https://raw.githubusercontent.com/joomengine/mcp_component/main/changelog.xml</changelogurl>
-    <downloads>
-      <downloadurl type="full" format="zip">https://github.com/joomengine/mcp_package/archive/refs/tags/v1.0.1.zip</downloadurl>
-    </downloads>
-    <tags>
-      <tag>stable</tag>
-    </tags>
-    <targetplatform name="joomla" version="6\.[1-9][0-9]*"/>
-    <sha512>f41e4f0d92d06b12bfbc932e5485243838686e0e4b5e3cab742f53240a79d812ea16ac99268b826dc9015e267ace0fdca25c73aa38f68d930846d7a79b2dc7e7</sha512>
-  </update>
-  <update>
-    <name>JoomEngine MCP Package</name>
-    <description>JoomEngine MCP component, webservices routing, and local console server.</description>
-    <element>pkg_joomengine_mcp</element>
-    <type>package</type>
-    <client>site</client>
-    <version>1.0.2</version>
-    <infourl title="JoomEngine MCP Package">https://github.com/joomengine/mcp_package/tree/v1.0.2</infourl>
-    <maintainer>Llewellyn van der Merwe</maintainer>
-    <maintainerurl>https://dev.vdm.io/</maintainerurl>
-    <php_minimum>8.3.0</php_minimum>
-    <changelogurl>https://raw.githubusercontent.com/joomengine/mcp_component/main/changelog.xml</changelogurl>
-    <downloads>
-      <downloadurl type="full" format="zip">https://github.com/joomengine/mcp_package/archive/refs/tags/v1.0.2.zip</downloadurl>
-    </downloads>
-    <tags>
-      <tag>stable</tag>
-    </tags>
-    <targetplatform name="joomla" version="6\.[1-9][0-9]*"/>
-  </update>
+	<update>
+		<name>JoomEngine MCP Package</name>
+		<description>JoomEngine MCP component, webservices routing, and local console server.</description>
+		<element>pkg_joomengine_mcp</element>
+		<type>package</type>
+		<client>site</client>
+		<version>1.0.0</version>
+		<infourl title="JoomEngine MCP Package">https://github.com/joomengine/mcp_package/tree/v1.0.0</infourl>
+		<maintainer>Llewellyn van der Merwe</maintainer>
+		<maintainerurl>https://dev.vdm.io/</maintainerurl>
+		<php_minimum>8.3.0</php_minimum>
+		<changelogurl>https://raw.githubusercontent.com/joomengine/mcp_component/main/changelog.xml</changelogurl>
+		<downloads>
+			<downloadurl type="full" format="zip">https://github.com/joomengine/mcp_package/archive/refs/tags/v1.0.0.zip</downloadurl>
+		</downloads>
+		<tags>
+			<tag>stable</tag>
+		</tags>
+		<targetplatform name="joomla" version="6\.[1-9][0-9]*"/>
+		<sha512>658dfdd6a0ec9e5d093288dd2077934b704341ac8bbafb98c4699ccf8d6a9e8d450fc9ccf98b71739e6d244da93860b22266d5609192cefa5c2788f6d8a6ae5b</sha512>
+	</update>
+	<update>
+		<name>JoomEngine MCP Package</name>
+		<description>JoomEngine MCP component, webservices routing, and local console server.</description>
+		<element>pkg_joomengine_mcp</element>
+		<type>package</type>
+		<client>site</client>
+		<version>1.0.1</version>
+		<infourl title="JoomEngine MCP Package">https://github.com/joomengine/mcp_package/tree/v1.0.1</infourl>
+		<maintainer>Llewellyn van der Merwe</maintainer>
+		<maintainerurl>https://dev.vdm.io/</maintainerurl>
+		<php_minimum>8.3.0</php_minimum>
+		<changelogurl>https://raw.githubusercontent.com/joomengine/mcp_component/main/changelog.xml</changelogurl>
+		<downloads>
+			<downloadurl type="full" format="zip">https://github.com/joomengine/mcp_package/archive/refs/tags/v1.0.1.zip</downloadurl>
+		</downloads>
+		<tags>
+			<tag>stable</tag>
+		</tags>
+		<targetplatform name="joomla" version="6\.[1-9][0-9]*"/>
+		<sha512>f41e4f0d92d06b12bfbc932e5485243838686e0e4b5e3cab742f53240a79d812ea16ac99268b826dc9015e267ace0fdca25c73aa38f68d930846d7a79b2dc7e7</sha512>
+	</update>
+	<update>
+		<name>JoomEngine MCP Package</name>
+		<description>JoomEngine MCP component, webservices routing, and local console server.</description>
+		<element>pkg_joomengine_mcp</element>
+		<type>package</type>
+		<client>site</client>
+		<version>1.0.2</version>
+		<infourl title="JoomEngine MCP Package">https://github.com/joomengine/mcp_package/tree/v1.0.2</infourl>
+		<maintainer>Llewellyn van der Merwe</maintainer>
+		<maintainerurl>https://dev.vdm.io/</maintainerurl>
+		<php_minimum>8.3.0</php_minimum>
+		<changelogurl>https://raw.githubusercontent.com/joomengine/mcp_component/main/changelog.xml</changelogurl>
+		<downloads>
+			<downloadurl type="full" format="zip">https://github.com/joomengine/mcp_package/archive/refs/tags/v1.0.2.zip</downloadurl>
+		</downloads>
+		<tags>
+			<tag>stable</tag>
+		</tags>
+		<targetplatform name="joomla" version="6\.[1-9][0-9]*"/>
+		<sha512>c7b14f9f870a91e074524c438c7e29fc6a5452017e169c80b501a499c10a4e1fc7425a2bc8ec7ef759ce14580af8ee05846ca27b4cb3752d4a3df218b46f7d3f</sha512>
+	</update>
 </updates>
