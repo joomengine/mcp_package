@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="6.1" type="package" method="upgrade">
+	<name>PKG_JOOMENGINE_MCP</name>
+	<packagename>joomengine_mcp</packagename>
+	<version>1.0.0</version>
+	<creationDate>September 2026</creationDate>
+	<author>Llewellyn van der Merwe</author>
+	<authorEmail>joomla@vdm.io</authorEmail>
+	<authorUrl>https://dev.vdm.io/</authorUrl>
+	<copyright>Copyright (C) 2026 Vast Development Method. All rights reserved.</copyright>
+	<copyrightyear>2026</copyrightyear>
+	<license>GNU General Public License version 3 or later; see LICENSE</license>
+	<packager>Vast Development Method</packager>
+	<packagerurl>https://dev.vdm.io/</packagerurl>
+	<description>JoomEngine MCP component, webservices routing, and local console server.</description>
+	<updateservers>
+		<server type="extension" name="JoomEngine MCP Package - Updates" element="pkg_joomengine_mcp">https://raw.githubusercontent.com/joomengine/mcp_package/main/.github/joomengine_mcp_update_server.xml</server>
+	</updateservers>
+	<changelogurl>https://raw.githubusercontent.com/joomengine/mcp_component/main/changelog.xml</changelogurl>
+	<languages folder="languages">
+		<language tag="en-GB">en-GB/en-GB.pkg_joomengine_mcp.sys.ini</language>
+		<language tag="en-GB">en-GB/en-GB.pkg_joomengine_mcp.ini</language>
+	</languages>
+	<files folder="src">
+		<file type="component" id="com_joomengine_mcp">joomengine__mcp_component__v1.0.0.zip</file>
+		<file type="plugin" id="joomengine_mcp" group="console">joomengine__mcp_plugin__v1.0.0.zip</file>
+		<file type="plugin" id="joomengine_mcp" group="webservices">joomengine__mcp_webservices__v1.0.0.zip</file>
+	</files>
+</extension>
