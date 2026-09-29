@@ -1,4 +1,4 @@
-# JoomEngine MCP Package (v1.0.0)
+# JoomEngine MCP Package (v1.0.1)
 
 JoomEngine MCP component, webservices routing, and local console server.
 
@@ -12,8 +12,8 @@ JoomEngine MCP component, webservices routing, and local console server.
 
 ## Extensions
 
-- [joomengine/mcp_component](https://github.com/joomengine/mcp_component) [v1.0.0](https://github.com/joomengine/mcp_component/archive/v1.0.0.zip)
-> Release v1.0.0
+- [joomengine/mcp_component](https://github.com/joomengine/mcp_component) [v1.0.1](https://github.com/joomengine/mcp_component/archive/v1.0.1.zip)
+> Release v1.0.1
 - [joomengine/mcp_plugin](https://github.com/joomengine/mcp_plugin) [v1.0.0](https://github.com/joomengine/mcp_plugin/archive/v1.0.0.zip)
 > Release v1.0.0
 - [joomengine/mcp_webservices](https://github.com/joomengine/mcp_webservices) [v1.0.0](https://github.com/joomengine/mcp_webservices/archive/v1.0.0.zip)
