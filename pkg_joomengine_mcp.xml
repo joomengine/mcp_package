@@ -2,8 +2,8 @@
 <extension version="6.1" type="package" method="upgrade">
 	<name>PKG_JOOMENGINE_MCP</name>
 	<packagename>joomengine_mcp</packagename>
-	<version>1.0.4</version>
-	<creationDate>September 2026</creationDate>
+	<version>1.0.5</version>
+	<creationDate>October 2026</creationDate>
 	<author>Llewellyn van der Merwe</author>
 	<authorEmail>joomla@vdm.io</authorEmail>
 	<authorUrl>https://dev.vdm.io/</authorUrl>
@@ -22,7 +22,7 @@
 		<language tag="en-GB">en-GB/en-GB.pkg_joomengine_mcp.ini</language>
 	</languages>
 	<files folder="src">
-		<file type="component" id="com_joomengine_mcp">joomengine__mcp_component__v1.0.4.zip</file>
+		<file type="component" id="com_joomengine_mcp">joomengine__mcp_component__v1.0.5.zip</file>
 		<file type="plugin" id="joomengine_mcp" group="console">joomengine__mcp_plugin__v1.0.0.zip</file>
 		<file type="plugin" id="joomengine_mcp" group="webservices">joomengine__mcp_webservices__v1.0.0.zip</file>
 	</files>
